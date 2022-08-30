@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: java-springboot
+  namespace: managed
+spec:
+  selector: null
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:1fec9243ec7915c85ad9d88294c0fcc320e1ccb2ec798b508a5ecab57a29a042
+        name: container-image
+        resources: {}
+status: {}
