@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map
+  namespace: managed
+spec:
+  replicas: 1
+  selector: null
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/scoheb/user-workload:dev-dc-metro-map
+        name: container-image
+        resources: {}
+status: {}
