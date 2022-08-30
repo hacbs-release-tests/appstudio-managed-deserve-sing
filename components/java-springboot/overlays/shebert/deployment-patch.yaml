@@ -5,7 +5,7 @@ metadata:
   name: java-springboot
   namespace: managed
 spec:
-  replicas: 2
+  replicas: 1
   selector: null
   strategy: {}
   template:
